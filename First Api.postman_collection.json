@@ -1,0 +1,1950 @@
+{
+	"info": {
+		"_postman_id": "fc7271cd-bc09-44ef-b95c-b148599ff0ce",
+		"name": "First Api",
+		"description": "This I s First Api For Me",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28154472"
+	},
+	"item": [
+		{
+			"name": "Settings Module",
+			"item": [
+				{
+					"name": "Get All Settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/setting",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"setting"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Settings Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.com/api/setting",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"setting"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 02 Apr 2024 18:12:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"settings Retrieved successfully\",\n    \"data\": {\n        \"about-us\": \"welcome to our community\",\n        \"about-our\": null,\n        \"goal\": null,\n        \"vision\": null\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cities Moduel",
+			"item": [
+				{
+					"name": "Get All Cities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/cities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All cities Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.com/api/cities",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 03 Apr 2024 00:56:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Cities Retrieved Successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"mansoura\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"cairo\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Districts Moduel",
+			"item": [
+				{
+					"name": "Get All Districts Based On Citiy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/districts/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"districts",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Districts Based On Citiy Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.com/api/districts/1",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"districts",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 03 Apr 2024 11:56:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Cities Retrieved Successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Al-Nile Street\",\n            \"city\": {\n                \"id\": 1,\n                \"name\": \"mansoura\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Mansoura University\",\n            \"city\": {\n                \"id\": 1,\n                \"name\": \"mansoura\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Message Moduel",
+			"item": [
+				{
+					"name": "Store New Message",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ibrahim",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ibrahim@gemail.com ",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01500795957",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "this is second message",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/message",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"message"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store New Message Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "redafayad",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "reda@gemail.com ",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01500795957",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "this is second message",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.com/api/message",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"message"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 03 Apr 2024 12:40:38 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"msg\": \"Messages Created Successfully\",\n    \"data\": {\n        \"name\": \"redafayad\",\n        \"email\": \"reda@gemail.com\",\n        \"phone\": \"01500795957\",\n        \"message\": \"this is second message\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Domains Moduel",
+			"item": [
+				{
+					"name": "Get All Domains",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/domains",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"domains"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Domains Examlpe",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.com/api/domains",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"domains"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 03 Apr 2024 13:08:02 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Domains Retrieved Successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Sponsored ads\",\n            \"ads\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth Moduel",
+			"item": [
+				{
+					"name": "register",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "reda",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "reda@gemail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register Examnple",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "reda",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "reda@gemail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.com/api/register",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Apr 2024 12:32:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"msg\": \"User Created Successfully\",\n    \"data\": {\n        \"token\": \"4|JQTqmEAIiNSawZSa5K0gNDFeOezX2wEHNSGKXncg34d97076\",\n        \"name\": \"reda\",\n        \"email\": \"reda@gemail.com\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "fayad@gemail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "reda@gemail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.com/api/login",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 04 Apr 2024 17:33:37 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"msg\": \"User Created Successfully\",\n    \"data\": {\n        \"token\": \"11|Fz3JfsRAGtW9J5bhxmpgZleBOKCvDMtDUH0hTy8c6d9cffe9\",\n        \"name\": \"reda\",\n        \"email\": \"reda@gemail.com\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/logout",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.com/api/logout",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 06 Apr 2024 00:47:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"logged out successfully\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ads Moduel",
+			"item": [
+				{
+					"name": "Get All Ads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/ads/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ads",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Ads With Pagination Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.com/api/ads/",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"ads",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 05 Apr 2024 12:40:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=99"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Ads Retrieved Successfully\",\n    \"data\": {\n        \"records\": [\n            {\n                \"id\": 3,\n                \"title\": \"Accusantium eius autem nihil voluptatem et dolor.\",\n                \"description\": \"Qui enim accusantium non voluptas placeat eum. Accusantium sint repellendus enim in aut fugiat. Enim et quaerat molestiae expedita rerum. Eius molestiae explicabo ut non quisquam.\",\n                \"phone\": \"(331) 517-9719\"\n            },\n            {\n                \"id\": 4,\n                \"title\": \"Repellendus ut possimus voluptatem molestiae odio.\",\n                \"description\": \"Illum autem voluptas hic est eum amet. Est beatae atque quod qui. Enim voluptas ab qui impedit et consectetur.\",\n                \"phone\": \"+1 (801) 791-7912\"\n            }\n        ],\n        \"pagination Links\": {\n            \"current page\": 1,\n            \"per page\": 2,\n            \"total\": 4,\n            \"Links\": {\n                \"first\": \"https://api.com/api/ads?page=1\",\n                \"next page\": \"https://api.com/api/ads?page=2\",\n                \"pervious page\": null,\n                \"last\": \"https://api.com/api/ads?page=2\"\n            }\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Latest Ads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.com/api/ads/latest",
+							"protocol": "https",
+							"host": [
+								"api",
+								"com"
+							],
+							"path": [
+								"api",
+								"ads",
+								"latest"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Latest Ads Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.com/api/ads/latest",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"ads",
+										"latest"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 05 Apr 2024 12:57:21 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Latest Ads Retrieved Successfully\",\n    \"data\": [\n        {\n            \"id\": 3,\n            \"title\": \"Accusantium eius autem nihil voluptatem et dolor.\",\n            \"description\": \"Qui enim accusantium non voluptas placeat eum. Accusantium sint repellendus enim in aut fugiat. Enim et quaerat molestiae expedita rerum. Eius molestiae explicabo ut non quisquam.\",\n            \"phone\": \"(331) 517-9719\",\n            \"domain\": {\n                \"id\": 1,\n                \"name\": \"Sponsored ads\",\n                \"ads\": 0\n            }\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Repellendus ut possimus voluptatem molestiae odio.\",\n            \"description\": \"Illum autem voluptas hic est eum amet. Est beatae atque quod qui. Enim voluptas ab qui impedit et consectetur.\",\n            \"phone\": \"+1 (801) 791-7912\",\n            \"domain\": {\n                \"id\": 1,\n                \"name\": \"Sponsored ads\",\n                \"ads\": 0\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get  Ads Based On Domain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.com/api/ads/domain/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"com"
+							],
+							"path": [
+								"api",
+								"ads",
+								"domain",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get  Ads Based On Domain Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.com/api/ads/domain/1",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"ads",
+										"domain",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 05 Apr 2024 13:08:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Latest Ads Retrieved Successfully\",\n    \"data\": [\n        {\n            \"id\": 3,\n            \"title\": \"Accusantium eius autem nihil voluptatem et dolor.\",\n            \"description\": \"Qui enim accusantium non voluptas placeat eum. Accusantium sint repellendus enim in aut fugiat. Enim et quaerat molestiae expedita rerum. Eius molestiae explicabo ut non quisquam.\",\n            \"phone\": \"(331) 517-9719\",\n            \"domain\": {\n                \"id\": 1,\n                \"name\": \"Sponsored ads\",\n                \"ads\": 0\n            }\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Repellendus ut possimus voluptatem molestiae odio.\",\n            \"description\": \"Illum autem voluptas hic est eum amet. Est beatae atque quod qui. Enim voluptas ab qui impedit et consectetur.\",\n            \"phone\": \"+1 (801) 791-7912\",\n            \"domain\": {\n                \"id\": 1,\n                \"name\": \"Sponsored ads\",\n                \"ads\": 0\n            }\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Non quos consequuntur animi omnis quis est voluptatem.\",\n            \"description\": \"Harum sunt voluptates voluptatibus inventore enim. Quaerat dolore vel totam at maiores. Itaque totam ducimus impedit aut. Dolores sapiente omnis blanditiis iste placeat.\",\n            \"phone\": \"+1-203-450-3289\",\n            \"domain\": {\n                \"id\": 1,\n                \"name\": \"Sponsored ads\",\n                \"ads\": 0\n            }\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Cupiditate ut ut quidem mollitia.\",\n            \"description\": \"Et fugit asperiores praesentium porro. Illum consequatur quibusdam aliquam hic. Inventore quos quam id adipisci aut.\",\n            \"phone\": \"(251) 294-8353\",\n            \"domain\": {\n                \"id\": 1,\n                \"name\": \"Sponsored ads\",\n                \"ads\": 0\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/ads/search?search=qu",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ads",
+								"search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "qu"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "search Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.com/api/ads/search?search=qu",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"ads",
+										"search"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "qu"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 05 Apr 2024 18:30:30 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Search Completed\",\n    \"data\": [\n        {\n            \"id\": 5,\n            \"title\": \"Non quos consequuntur animi omnis quis est voluptatem.\",\n            \"description\": \"Harum sunt voluptates voluptatibus inventore enim. Quaerat dolore vel totam at maiores. Itaque totam ducimus impedit aut. Dolores sapiente omnis blanditiis iste placeat.\",\n            \"phone\": \"+1-203-450-3289\",\n            \"domain\": {\n                \"id\": 1,\n                \"name\": \"Sponsored ads\",\n                \"ads\": 0\n            }\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Cupiditate ut ut quidem mollitia.\",\n            \"description\": \"Et fugit asperiores praesentium porro. Illum consequatur quibusdam aliquam hic. Inventore quos quam id adipisci aut.\",\n            \"phone\": \"(251) 294-8353\",\n            \"domain\": {\n                \"id\": 1,\n                \"name\": \"Sponsored ads\",\n                \"ads\": 0\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create New Add",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5|KGTr2EcqzrGmFXwdjTic7okOIroLpY6TS6E6wC4Vec425145",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Firs Add with Fayad",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01062837319",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "All about You Want",
+									"type": "text"
+								},
+								{
+									"key": "domain_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.com/api/ads/create",
+							"protocol": "https",
+							"host": [
+								"api",
+								"com"
+							],
+							"path": [
+								"api",
+								"ads",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create New Add Wit User Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Firs Add with Fayad",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01062837319",
+											"type": "text"
+										},
+										{
+											"key": "text",
+											"value": "All about You Want",
+											"type": "text"
+										},
+										{
+											"key": "domain_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.com/api/ads/create",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"ads",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 06 Apr 2024 00:46:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"msg\": \"New Ad Created Successfully\",\n    \"data\": {\n        \"id\": 7,\n        \"title\": \"Firs Add with Fayad\",\n        \"description\": \"All about You Want\",\n        \"phone\": \"01062837319\",\n        \"domain\": {\n            \"id\": 1,\n            \"name\": \"Sponsored ads\",\n            \"ads\": 0\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Ad",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5|KGTr2EcqzrGmFXwdjTic7okOIroLpY6TS6E6wC4Vec425145",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "First Add with Fayad",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "First Add From POstMan",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01062837319",
+									"type": "text"
+								},
+								{
+									"key": "domain_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.com/api/ads/update/10",
+							"protocol": "https",
+							"host": [
+								"api",
+								"com"
+							],
+							"path": [
+								"api",
+								"ads",
+								"update",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Ad Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "update SecondAdd with Fayad",
+											"type": "text"
+										},
+										{
+											"key": "text",
+											"value": "updated from PostMan",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01062837319",
+											"type": "text"
+										},
+										{
+											"key": "domain_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.com/api/ads/update/8",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"ads",
+										"update",
+										"8"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 06 Apr 2024 13:17:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"msg\": \"Your Ad Updated Successfully\",\n    \"data\": {\n        \"id\": 8,\n        \"title\": \"update SecondAdd with Fayad\",\n        \"description\": \"updated from PostMan\",\n        \"phone\": \"01062837319\",\n        \"domain\": {\n            \"id\": 1,\n            \"name\": \"Sponsored ads\",\n            \"ads\": 0\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Ad",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5|KGTr2EcqzrGmFXwdjTic7okOIroLpY6TS6E6wC4Vec425145",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.com/api/ads/delete/8",
+							"protocol": "https",
+							"host": [
+								"api",
+								"com"
+							],
+							"path": [
+								"api",
+								"ads",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Ad Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.com/api/ads/delete/8",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"ads",
+										"delete",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 06 Apr 2024 13:20:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Your Ad Deleted Successfully\",\n    \"data\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User Ads",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|EoKLQji8J7a3toDOfX2v34Zs0gEZ9VbJPB9CFPNXa72cd962",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.com/api/ads/userAds",
+							"protocol": "https",
+							"host": [
+								"api",
+								"com"
+							],
+							"path": [
+								"api",
+								"ads",
+								"userAds"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User Ads Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.com/api/ads/userAds",
+									"protocol": "https",
+									"host": [
+										"api",
+										"com"
+									],
+									"path": [
+										"api",
+										"ads",
+										"userAds"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 06 Apr 2024 17:18:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1q mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.15"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"msg\": \"Ads Retrieved Successfully\",\n    \"data\": {\n        \"records\": [\n            {\n                \"id\": 3,\n                \"title\": \"Accusantium eius autem nihil voluptatem et dolor.\",\n                \"description\": \"Qui enim accusantium non voluptas placeat eum. Accusantium sint repellendus enim in aut fugiat. Enim et quaerat molestiae expedita rerum. Eius molestiae explicabo ut non quisquam.\",\n                \"phone\": \"(331) 517-9719\",\n                \"domain\": {\n                    \"id\": 1,\n                    \"name\": \"Sponsored ads\",\n                    \"ads\": 0\n                }\n            },\n            {\n                \"id\": 4,\n                \"title\": \"Repellendus ut possimus voluptatem molestiae odio.\",\n                \"description\": \"Illum autem voluptas hic est eum amet. Est beatae atque quod qui. Enim voluptas ab qui impedit et consectetur.\",\n                \"phone\": \"+1 (801) 791-7912\",\n                \"domain\": {\n                    \"id\": 1,\n                    \"name\": \"Sponsored ads\",\n                    \"ads\": 0\n                }\n            }\n        ],\n        \"pagination Links\": {\n            \"current page\": 1,\n            \"per page\": 2,\n            \"total\": 4,\n            \"Links\": {\n                \"first\": \"https://api.com/api/ads/userAds?page=1\",\n                \"next page\": \"https://api.com/api/ads/userAds?page=2\",\n                \"pervious page\": null,\n                \"last\": \"https://api.com/api/ads/userAds?page=2\"\n            }\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://api.com"
+		}
+	]
+}
