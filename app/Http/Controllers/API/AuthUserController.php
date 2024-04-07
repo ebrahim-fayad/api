@@ -11,6 +11,7 @@ use App\Models\User;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -42,6 +43,10 @@ class AuthUserController extends Controller
     }
     public function login(LoginRequest $request)
     {
+        $executed = RateLimiter::attempt('send-message:', 5, function () {});
+            if (!$executed) {
+                return ApiResponse::sendResponse(429,'Too Many Requests');
+            }
 
         if (Auth::attempt(['email'=>$request->email,'password'=>$request->password])) {
             $user = Auth::user();
